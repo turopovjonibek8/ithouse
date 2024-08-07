@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    margin: 0;
+}
+section{
+    background-color: rgb(219, 217, 217);
+    padding: 80px  ;
+}
+.card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+.gallary-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+}
+.gallary-menu label{
+    background-color: white;
+    padding: 8px 15px; 
+    cursor: pointer;
+    border-radius: 3px;
+}
+label:nth-child(1){
+    background-color: grey;
+    color: white;
+}
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto 0 auto;
+   
+}
+
+.card{
+    border-radius: 20px;
+    height: 250px;
+}
+.card .image{
+    height: 200px;
+}
+
+.card-body{
+    height: 50px;
+    background-color: white;
+}
+.card .car{
+    background-color: white;
+    height: 23%;
+    line-height: 26px;
+}
+.card h3{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.car p{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.people{
+    background-color: white;
+    height: 23%;
+    line-height: 26px;
+}
+.people h3{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.people p{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.natur{
+    background-color: white;
+    height: 23%;
+    line-height: 26px;
+}
+.natur h3{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.natur p{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.cars{
+    background-color: white;
+    height: 23%;
+    line-height: 26px;
+}
+.cars h3{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.cars p{
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+#natur:checked ~ section .gallery-content .natur{
+    opacity: 1;
+    position: relative;
+}
+#natur:checked ~ section .gallery-content .cars,
+#natur:checked ~ section .gallery-content .people{
+    opacity: 0 ;
+    position: absolute;
+}
+#cars:checked ~ section .gallery-content .cars{
+    opacity: 1;
+    position: relative;
+}
+#cars:checked ~ section .gallery-content .natur,
+#cars:checked ~ section .gallery-content .people{
+    opacity: 0 ;
+    position: absolute;
+}
+#peole:checked ~ section .gallery-content .people{
+    opacity: 1;
+    position: relative;
+}
+#people:checked ~ section .gallery-content .natur,
+#people:checked ~ section .gallery-content .cars{
+    opacity: 0 ;
+    position: absolute;
+}
+input{
+    display: none;
+}
